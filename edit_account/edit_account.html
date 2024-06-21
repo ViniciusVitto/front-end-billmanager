@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Conta - Bill Manager</title>
+    <link rel="stylesheet" href="edit_account.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Conta</h1>
+        <form id="accountForm">
+            <label for="accountName">Nome da Conta:</label>
+            <input type="text" id="accountName" placeholder="Nome da Conta" required>
+            <label for="accountValue">Valor da Conta:</label>
+            <input type="number" id="accountValue" placeholder="Valor" required>
+            <label for="accountDueDate">Data de Vencimento:</label>
+            <input type="date" id="accountDueDate" required>
+            <label for="accountPaid">Pago:</label>
+            <select id="accountPaid" required>
+                <option value="SIM">Sim</option>
+                <option value="NAO">Não</option>
+            </select>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+        <p><a href="/account/account.html">Voltar para a lista de contas</a></p>
+    </div>
+    <script src="edit_account.js"></script>
+</body>
+</html>

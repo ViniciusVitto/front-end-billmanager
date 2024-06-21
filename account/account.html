@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas - Bill Manager</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <button id="logoutButton">Sair</button>
+        </div>
+        <h1>Gerenciamento de Contas</h1>
+        <div class="action-bar">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Procurar pelo nome da conta">
+                <button id="searchButton">Procurar</button>
+            </div>
+            <button id="newAccountButton" onclick="location.href='/new_account/new_account.html'">Nova Conta</button>
+        </div>
+        <table id="contasTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Data de Vencimento</th>
+                    <th>Pago</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="account.js"></script>
+</body>
+</html>
